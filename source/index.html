@@ -26,6 +26,35 @@
           <a href="#">Попутчики</a>
         </li>
       </ul>
+      <button class="menu__auth btn__rounded" type="button">Авторизация</button>
+      <ul class="menu__actions actions">
+        <li class="action__item--call">
+          <a href="tel:+78005558628">
+            <svg width="39" height="39"></svg>
+            <span class="actions__phone-number">8 800 555-86-28</span>
+          </a>
+        </li>
+        <li class="action__item--mail">
+          <a href="mailto:mail@htmlacademy.ru">
+            <svg width="39" height="39"></svg>
+            <span class="actions__mailbox">mail@htmlacademy.ru</span>
+          </a>
+        </li>
+      </ul>
+      <div class="menu__socials socials">
+        <ul class="socials__list">
+          <li class="socials__item--transparent">
+            <a class="socials__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+          </li>
+          <li class="socials__item--transparent">
+            <a class="socials__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
+          </li>
+          <li class="socials__item--transparent">
+            <a class="socials__link social__link--instagram" href="https://www.instagram.com/htmlacademy">Мы в
+              Инстаграме</a>
+          </li>
+        </ul>
+      </div>
     </div>
   </nav>
 </header>
@@ -153,12 +182,12 @@
           <div class="comp-card__hashtags">
             #ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи
           </div>
-          <div class="comp-card__ways-of-travelling">
-            <img src="http://placehold.it/19x21" class="comp-card__way-item comp-card__way-item--active">
-            <img src="http://placehold.it/19x21" class="comp-card__way-item">
-            <img src="http://placehold.it/19x21" class="comp-card__way-item">
-            <img src="http://placehold.it/19x21" class="comp-card__way-item">
-          </div>
+          <ul class="comp-card__ways-of-travelling ways-of-travelling">
+            <li class="ways-of-travelling__way-item ways-of-travelling__way-item--active"><img src="http://placehold.it/19x21"></li>
+            <li class="ways-of-travelling__way-item"><img src="http://placehold.it/19x21"></li>
+            <li class="ways-of-travelling__way-item"><img src="http://placehold.it/19x21"></li>
+            <li class="ways-of-travelling__way-item"><img src="http://placehold.it/19x21"></li>
+          </ul>
         </div>
       </div>
 
@@ -178,12 +207,12 @@
           <div class="comp-card__hashtags">
             #бургер #бар #футбол #концерт #крафт
           </div>
-          <div class="comp-card__ways-of-travelling">
-            <img src="http://placehold.it/19x21" class="comp-card__way-item comp-card__way-item--active">
-            <img src="http://placehold.it/19x21" class="comp-card__way-item comp-card__way-item--active">
-            <img src="http://placehold.it/19x21" class="comp-card__way-item">
-            <img src="http://placehold.it/19x21" class="comp-card__way-item comp-card__way-item--active">
-          </div>
+          <ul class="comp-card__ways-of-travelling ways-of-travelling">
+            <li class="ways-of-travelling__way-item ways-of-travelling__way-item--active"><img src="http://placehold.it/19x21"></li>
+            <li class="ways-of-travelling__way-item ways-of-travelling__way-item--active"><img src="http://placehold.it/19x21"></li>
+            <li class="ways-of-travelling__way-item"><img src="http://placehold.it/19x21"></li>
+            <li class="ways-of-travelling__way-item ways-of-travelling__way-item--active"><img src="http://placehold.it/19x21"></li>
+          </ul>
         </div>
       </div>
     </div>
@@ -203,7 +232,7 @@
       <dt class="payment__name">Кастомный цвет карточки</dt>
       <dd class="payment__rate">59 руб./мес</dd>
     </dl>
-    <button class="btn__rectangular-transparent add-profile__bussiness-rates" type="button">Показать тарифы для бизнеса</button>
+    <a class="add-profile__bussiness-rates" href="#">Показать тарифы для бизнеса</a>
   </section>
 
   <section class="interested page-main__section-dark">
