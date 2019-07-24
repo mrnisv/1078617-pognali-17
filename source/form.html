@@ -5,16 +5,237 @@
   <title>Погнали?</title>
 </head>
 <body>
-  <header class="page-header">
-    <a class="page-header__logo">
-      <img class="page-header__logo-image" src="http://placehold.it/160x50" width="160" height="50" alt="Сервис 'Погнали?'">
-    </a>
-    <a class="page-header__menu">
-      <img class="page-header__menu-icon" src="http://placehold.it/46x26" width="46" height="26" alt="Кнопка открытия меню">
-    </a>
-  </header>
+<header class="page-header">
+  <a class="page-header__logo">
+    <img
+      class="page-header__logo-image"
+      src="http://placehold.it/160x50"
+      width="160"
+      height="50"
+      alt="Сервис &rsquo;Погнали?&rsquo;">
+  </a>
+  <nav class="page-header__menu menu">
+    <button class="menu__toggle" type="button">
+      <svg width="46" height="26"></svg>
+    </button>
+    <div class="menu__wrapper">
+      <ul class="menu__list">
+        <li class="menu__item">
+          <a href="#">О сервисе</a>
+        </li>
+        <li class="menu__item">
+          <a href="#">Направления</a>
+        </li>
+        <li class="menu__item">
+          <a href="#">Попутчики</a>
+        </li>
+      </ul>
+      <button class="menu__auth btn__rounded" type="button">Авторизация</button>
+      <ul class="menu__actions actions">
+        <li class="action__item--call">
+          <a href="tel:+78005558628">
+            <svg width="39" height="39"></svg>
+            <span class="actions__phone-number">8 800 555-86-28</span>
+          </a>
+        </li>
+        <li class="action__item--mail">
+          <a href="mailto:mail@htmlacademy.ru">
+            <svg width="39" height="39"></svg>
+            <span class="actions__mailbox">mail@htmlacademy.ru</span>
+          </a>
+        </li>
+      </ul>
+      <div class="menu__socials socials">
+        <ul class="socials__list">
+          <li class="socials__item--transparent">
+            <a class="socials__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в
+              Фейсбуке</a>
+          </li>
+          <li class="socials__item--transparent">
+            <a class="socials__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
+          </li>
+          <li class="socials__item--transparent">
+            <a class="socials__link social__link--instagram" href="https://www.instagram.com/htmlacademy">Мы в
+              Инстаграме</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+<main class="form-main">
 
-  <main class="page-main">
-  </main>
+  <section class="current-menu-position">
+    <span class="current-menu-position__name">Попутчики</span>
+  </section>
+
+  <section class="user">
+    <div class="user__level"><span>80</span>level</div>
+    <div class="user__photo-pic"><img src="#"></div>
+    <button class="user__change-photo" type="button">Сменить фото</button>
+    <div class="user__tags">
+      <p class="user__heading">тэги:</p>
+      <span class="user__tags-list">#бургер #бар #футбол #концерт #крафт</span>
+    </div>
+    <div class="user__transport">
+      <p class="user__section-name">транспорт:</p>
+      <ul class="companion__ways-of-travelling ways-of-travelling">
+        <li class="ways-of-travelling__way-item ways-of-travelling__way-item--active"><img
+          src="http://placehold.it/19x21"></li>
+        <li class="ways-of-travelling__way-item ways-of-travelling__way-item--active"><img
+          src="http://placehold.it/19x21"></li>
+        <li class="ways-of-travelling__way-item"><img src="http://placehold.it/19x21"></li>
+        <li class="ways-of-travelling__way-item ways-of-travelling__way-item--active"><img
+          src="http://placehold.it/19x21"></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="plans">
+    <h2 class="plans__heading form-main__heading">Мои планы:</h2>
+    <ol class="plans__list">
+      <li class="plans__item">
+        <p class="plans__countries">Франция, Италия</p>
+        <p class="plans__companions-number">3 попутчика</p>
+        <p class="plans__dates">26 мар — 29 мар</p>
+        <button class="plans__change" type="button">Изменить</button>
+      </li>
+      <li class="plans__item">
+        <p class="plans__countries">Тайланд, Индонезия</p>
+        <p class="plans__companions-number">1 попутчик</p>
+        <p class="plans__dates">1 июл — 15 июл</p>
+        <button class="plans__change" type="button">Изменить</button>
+      </li>
+    </ol>
+  </section>
+
+  <section class="add-plan">
+    <h2 class="add-plan__heading form-main__heading">Добавить план:</h2>
+    <div class="add-plan__container">
+      <input class="visually-hidden" type="radio" id="step-1" name="toggle" checked>
+      <input class="visually-hidden" type="radio" id="step-2" name="toggle">
+      <input class="visually-hidden" type="radio" id="step-3" name="toggle">
+      <div class="add-plan__slider-controls slider-controls">
+        <label class="slider-controls-item slider-controls-item--1" for="step-1">Шаг 1</label>
+        <label class="slider-controls-item slider-controls-item--2" for="step-2">Шаг 2</label>
+        <label class="slider-controls-item slider-controls-item--3" for="step-3">Шаг 3</label>
+      </div>
+      <form class="add-plan__trip-form trip-form" method="get" action="https://echo.htmlacademy.ru">
+        <ul class="trip-form__list">
+          <li class="trip-form__item">
+            <h3 class="trip-form__heading">Шаг 1. <br> Даты пребывания</h3>
+            <p class="trip-form__text">Укажите предпочтительное количество попутчиков, которых вы&nbsp;хотели&nbsp;бы
+              позвать в&nbsp;поездку и&nbsp;ее&nbsp;предполагаемую длительность.</p>
+
+            <label for="companions">ищу попутчиков:</label>
+            <span>чел.</span>
+            <div class="trip-form__companions-counter counter">
+              <span class="counter__minus">-</span>
+              <input type="text" value="1" id="companions" class="counter__input"/>
+              <span class="counter__plus">+</span>
+            </div>
+
+            <label for="duration">длительность:</label>
+            <span>дн.</span>
+            <div class="trip-form__days-counter counter">
+              <span class="counter__minus">-</span>
+              <input type="text" value="1" id="duration" class="counter__input"/>
+              <span class="counter__plus">+</span>
+            </div>
+
+            <label for="children" class="trip-form__text">Можно с детьми</label>
+            <input type="checkbox" class="trip-form__children" id="children">
+            <div class="trip-form__calendar">тут будет календарь, но пока его нет :(</div>
+            <button class="trip-form__next btn__rounded" type="button">следующий шаг</button>
+          </li>
+          <li class="trip-form__item">
+            <h3 class="trip-form__heading">Шаг 2. <br> Маршрут</h3>
+            <p class="trip-form__text">Укажите страны, которые вы&nbsp;хотели по&nbsp;посетить. Это может быть одна или
+              сразу несколько.</p>
+
+            <div class="trip-form__dropdown dropdown">
+              <div class="dropdown__trigger">Босния и герцеговина</div>
+              <span class="flag"><img src="http://placehold.it/35x24"></span>
+              <div class="dropdown__content">
+                <a href="#" class="dropdown__item">Страна 1</a>
+                <a href="#" class="dropdown__item">Страна 2</a>
+                <a href="#" class="dropdown__item">Страна 3</a>
+              </div>
+            </div>
+            <div class="trip-form__dropdown dropdown">
+              <div class="dropdown__trigger">Чехословакия</div>
+              <span class="flag"><img src="http://placehold.it/35x24"></span>
+              <div class="dropdown__content">
+                <a href="#" class="dropdown__item">Страна 1</a>
+                <a href="#" class="dropdown__item">Страна 2</a>
+                <a href="#" class="dropdown__item">Страна 3</a>
+              </div>
+            </div>
+            <div class="trip-form__dropdown dropdown">
+              <div class="dropdown__trigger">Выберете страну</div>
+              <div class="dropdown__content">
+                <a href="#" class="dropdown__item">Страна 1</a>
+                <a href="#" class="dropdown__item">Страна 2</a>
+                <a href="#" class="dropdown__item">Страна 3</a>
+              </div>
+            </div>
+            <div class="trip-form__dropdown dropdown dropdown--with-background">
+              <div class="dropdown__trigger">Добавить страну</div>
+              <span class="flag"><img src="http://placehold.it/35x24"></span>
+              <div class="dropdown__content">
+                <a href="#" class="dropdown__item">Страна 1</a>
+                <a href="#" class="dropdown__item">Страна 2</a>
+                <a href="#" class="dropdown__item">Страна 3</a>
+              </div>
+            </div>
+
+            <button class="trip-form__next btn__rounded" type="button">следующий шаг</button>
+            <button class="trip-form__next btn__rounded" type="button">на шаг назад</button>
+          </li>
+          <li class="trip-form__item">
+            <h3 class="trip-form__heading">Шаг 3. <br> Развлечения</h3>
+            <p class="trip-form__text">Наконец, расскажите о&nbsp;своих планах времяпровождения. Можно писать в&nbsp;свободной
+              форме и&nbsp;ставить тэги.</p>
+            <div class="trip-form__country-and-activities">
+              <p class="country-and-activities__input-heading">Босния и герцеговина</p>
+              <span class="country-and-activities__flag-icon"><img src="http://placehold.it/35x24"></span>
+              <input type="text" class="country-and-activities__description"/>
+            </div>
+            <div class="trip-form__country-and-activities">
+              <p class="country-and-activities__input-heading">Чехословакия</p>
+              <span class="country-and-activities__flag-icon"><img src="http://placehold.it/35x24"></span>
+              <input type="text" class="country-and-activities__description"/>
+            </div>
+            <button class="trip-form__next btn__rounded" type="submit">отправить</button>
+            <button class="trip-form__next btn__rounded" type="button">на шаг назад</button>
+          </li>
+        </ul>
+      </form>
+    </div>
+  </section>
+
+</main>
+<footer class="page-footer">
+  <div class="page-footer__logo"><img class="page-footer__logo-image" src="http://placehold.it/160x50" width="160"
+                                      height="50" alt="Сервис 'Погнали?'"></div>
+  <div class="page-footer__socials socials">
+    <ul class="socials__list">
+      <li class="socials__item">
+        <a class="socials__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+      </li>
+      <li class="socials__item">
+        <a class="socials__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
+      </li>
+      <li class="socials__item">
+        <a class="socials__link social__link--instagram" href="https://www.instagram.com/htmlacademy">Мы в
+          Инстаграме</a>
+      </li>
+    </ul>
+  </div>
+  <div class="page-footer__copyright">
+    <span class="page-footer__text-copyright">Разработано</span>
+    <a class="page-footer__logo-copyright" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+  </div>
+</footer>
 </body>
 </html>
