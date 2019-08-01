@@ -1,0 +1,25 @@
+.action-buttons {
+  margin:0 26px 30px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+
+  &__item {
+    padding: 13px;
+    width: 40px;
+    display: block;
+    border-radius: 50%;
+    background-color: $mango-two;
+    flex-shrink: 0;
+
+    &:nth-child(2) {
+      background-color: $mango-three;
+    }
+  }
+
+  &__pic {
+    max-width: 100%;
+  }
+}

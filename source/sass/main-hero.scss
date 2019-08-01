@@ -1,0 +1,36 @@
+.main-hero {
+  background-color: $dark-blue-grey;
+  position: relative;
+
+  &__background-picture {
+    height: 569px;
+    width: 100vw;
+    background-image: url("../img/globe-back-mobile@1x.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: -2px;
+  }
+
+  &__heading {
+    font-size: 36px;
+    font-weight: bold;
+    line-height: 1.11;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ffffff;
+    position: relative;
+    z-index: 2;
+    margin-bottom: 426px;
+  }
+
+  &__about-service {
+    padding: 0 63px 84px 50px;
+  }
+
+  &__actions {
+    position: relative;
+    z-index: 2;
+  }
+}

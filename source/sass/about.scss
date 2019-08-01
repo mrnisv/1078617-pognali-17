@@ -1,0 +1,27 @@
+.about {
+  &__heading {
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 1;
+    letter-spacing: normal;
+    text-align: left;
+    color: $mango-two;
+
+    margin-bottom: 23px;
+  }
+
+  &__text {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.38;
+    letter-spacing: normal;
+    text-align: left;
+    color: #ffffff;
+
+    margin-bottom: 25px;
+
+    &--bold {
+      font-weight: bold;
+    }
+  }
+}

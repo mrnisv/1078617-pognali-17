@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Погнали?</title>
+  <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
 <header class="page-header">
@@ -26,7 +27,7 @@
           <a href="#">Попутчики</a>
         </li>
       </ul>
-      <button class="menu__auth btn btn-rounded" type="button">Авторизация</button>
+      <button class="menu__auth btn btn--rounded" type="button">Авторизация</button>
       <ul class="menu__actions actions">
         <li class="action__item action__item--call">
           <a href="tel:+78005558628">
@@ -66,17 +67,23 @@
     <h1 class="main-hero__heading">В&nbsp;путешествие с&nbsp;крутыми попутчиками!</h1>
     <div class="main-hero__background-picture"></div>
     <div class="main-hero__actions action-buttons">
-      <button class="action-buttons__item" type="button">Позвонить</button>
-      <button class="action-buttons__item" type="button">Написать</button>
-      <button class="btn btn-rounded action-buttons__item" type="button">Авторизироваться</button>
+      <a class="action-buttons__item">
+        <!--Позвонить-->
+        <img class="action-buttons__pic" src="img/topmenu-mail.svg">
+      </a>
+      <a class="action-buttons__item">
+        <!--Написать-->
+        <img class="action-buttons__pic" src="img/topmenu-phone.svg">
+      </a>
+      <a class="btn btn--rounded action-buttons__item--auth">Авторизироваться</a>
     </div>
 
     <blockquote class="main-hero__reviews review">
       <p class="review__content">
-        Лучшее приложение, что я&nbsp;видел в&nbsp;жизни!
+        «Лучшее приложение, что я&nbsp;видел в&nbsp;жизни!»
       </p>
       <footer>
-        <cite class="review__author">Мурат Эльтазин главный редактор газеты &laquo;гаджетлайф&raquo;</cite>
+        <cite class="review__content review__content--author">Мурат Эльтазин главный редактор газеты &laquo;гаджетлайф&raquo;</cite>
       </footer>
     </blockquote>
 
@@ -164,7 +171,7 @@
       </a>
       </li>
       </ul>
-      <button class="btn btn-rectangular destinations__more" type="button">Показать все</button>
+      <button class="btn btn--rectangular destinations__more" type="button">Показать все</button>
 
   </section>
 
@@ -287,7 +294,7 @@
       <svg width="39" height="39"></svg>
       <p class="route__place">ул. Большая Конюшенная, 19/8</p>
     </div>
-    <button class="btn btn--rectangular-bordered route__navigate-to" type="button">Проложить маршрут</button>
+    <button class="btn btn--rectangular btn--rectangular-bordered route__navigate-to" type="button">Проложить маршрут</button>
   </section>
 
   <section class="map page-main__section"><img src="http://placehold.it/304x263"></section>
