@@ -1,39 +1,55 @@
+@import "colors";
+
 .steps {
   font-size: 18px;
-  font-weight: bold;
+  font-weight: 700;
   line-height: 1;
-  letter-spacing: normal;
 
   list-style: none;
 
   display: flex;
   flex-direction: column;
 
-  margin: 0 25px 75px;
+  margin-bottom: 75px;
 
   &__step-item {
-    color: $dark;
+    background-color: $color-light-gold;
+    color: $color-dark;
 
     padding: 23px 109px 39px 25px;
     position: relative;
 
-    &:first-child {
-      background-color: $mango-two;
+    margin-top: -14px;
+
+    border-radius: 10px;
+
+    &::after {
+      counter-increment: section;
+      content: counter(section);
+      position: absolute;
+      right: 23px;
+      top: 23px;
+      color: $color-white;
+    }
+
+    &--first {
+      background-color: $color-mango-two;
 
       border-top-right-radius: 10px;
       border-top-left-radius: 10px;
 
       &::after {
-        content: "1";
+        counter-increment: section;
+        content: counter(section);
         position: absolute;
         right: 23px;
         top: 23px;
-        color: #ffffff;
+        color: $color-white;
       }
     }
 
-    &:nth-child(2) {
-      background-color: $mango;
+    &--second {
+      background-color: $color-mango;
 
       margin-top: -14px;
 
@@ -41,16 +57,17 @@
       border-top-left-radius: 10px;
 
       &::after {
-        content: "2";
+        counter-increment: section;
+        content: counter(section);
         position: absolute;
         right: 23px;
         top: 23px;
-        color: #ffffff;
+        color: $color-white;
       }
     }
 
-    &:nth-child(3) {
-      background-color: $mango-three;
+    &--third {
+      background-color: $color-mango-three;
 
       margin-top: -14px;
 
@@ -58,28 +75,29 @@
       border-top-left-radius: 10px;
 
       &::after {
-        content: "3";
+        counter-increment: section;
+        content: counter(section);
         position: absolute;
         right: 23px;
         top: 23px;
-        color: #ffffff;
+        color: $color-white;
       }
     }
 
-    &:nth-child(4) {
-      background-color: $light-gold;
-
-      margin-top: -14px;
-
-      border-radius: 10px;
-
-      &::after {
-        content: "4";
-        position: absolute;
-        right: 23px;
-        top: 23px;
-        color: #ffffff;
-      }
-    }
+    //&:nth-child(4) {
+    //  background-color: $color-light-gold;
+    //
+    //  margin-top: -14px;
+    //
+    //  border-radius: 10px;
+    //
+    //  &::after {
+    //    content: "4";
+    //    position: absolute;
+    //    right: 23px;
+    //    top: 23px;
+    //    color: $color-white;
+    //  }
+    //}
   }
 }

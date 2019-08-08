@@ -12,13 +12,15 @@ a {
   text-decoration: none;
 }
 
+@import "normalize";
 @import "btn";
 @import "fonts";
 @import "header";
 @import "settings";
-@import "main-hero";
+@import "blocks/main-hero";
 @import "review";
 @import "steps";
 @import "about";
-@import "page-main";
+@import "blocks/page-main";
 @import "action-buttons";
+@import "blocks/destinations";

@@ -1,0 +1,14 @@
+@import "../colors";
+
+.destinations {
+  padding-top: 122px;
+
+  &__text {
+    padding-right: 53px;
+    margin-bottom: 66px;
+
+    font-size: 16px;
+    font-weight: 300;
+    color: $color-greyish-brown;
+  }
+}

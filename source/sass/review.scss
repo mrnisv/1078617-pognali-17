@@ -1,19 +1,19 @@
+@import "colors";
 .review {
   margin: 0;
-  padding: 0 116px 33px 51px;
+  padding: 0 90px 33px 26px;
 
   &__content {
     font-size: 16px;
     font-weight: 300;
     line-height: 1.38;
-    letter-spacing: normal;
     text-align: left;
-    color: #ffffff;
+    color: $color-white;
 
     margin-bottom: 25px;
 
     &--author {
-      font-weight: bold;
+      font-weight: 700;
     }
   }
 }

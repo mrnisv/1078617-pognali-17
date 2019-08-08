@@ -1,0 +1,29 @@
+@import "../colors";
+
+.main-hero {
+  position: relative;
+
+  &__heading {
+    margin-left: -25px;
+    height: 510px;
+    width: calc(100% + 50px);
+    background: url("../../img/traveller-illustration-mobile@1x.png") no-repeat bottom, url("../../img/globe-back-mobile@1x.jpg") no-repeat center;
+    background-size: auto, cover;
+    background-color: #ff8d30;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.11;
+    text-align: center;
+    color: $color-white;
+
+  }
+
+  &__about-service {
+    padding: 0 38px 84px 25px;
+  }
+
+  &__actions {
+    position: relative;
+    z-index: 2;
+  }
+}

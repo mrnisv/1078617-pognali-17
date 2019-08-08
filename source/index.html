@@ -63,9 +63,9 @@
 </header>
 
 <main class="page-main">
-  <section class="main-hero page-main__section-dark">
-    <h1 class="main-hero__heading">В&nbsp;путешествие с&nbsp;крутыми попутчиками!</h1>
-    <div class="main-hero__background-picture"></div>
+  <section class="main-hero page-main__section page-main__section--dark">
+    <div class="main-hero__heading">В&nbsp;путешествие с&nbsp;крутыми попутчиками!</div>
+    <!--<div class="main-hero__background-picture"></div>-->
     <div class="main-hero__actions action-buttons">
       <a class="action-buttons__item">
         <!--Позвонить-->
@@ -75,7 +75,7 @@
         <!--Написать-->
         <img class="action-buttons__pic" src="img/topmenu-phone.svg">
       </a>
-      <a class="btn btn--rounded action-buttons__item--auth">Авторизироваться</a>
+      <a class="btn btn--rounded action-buttons__item--auth">Авторизация</a>
     </div>
 
     <blockquote class="main-hero__reviews review">
@@ -88,13 +88,13 @@
     </blockquote>
 
     <ol class="main-hero__steps steps">
-      <li class="steps__step-item">
+      <li class="steps__step-item steps__step-item--first">
         Выберите направление
       </li>
-      <li class="steps__step-item">
+      <li class="steps__step-item steps__step-item--second">
         Изучите идеи путешественников
       </li>
-      <li class="steps__step-item">
+      <li class="steps__step-item steps__step-item--third">
         Находите тех, кто похож на&nbsp;вас
       </li>
       <li class="steps__step-item">
@@ -102,7 +102,7 @@
       </li>
     </ol>
     <div class="main-hero__about-service about">
-      <h2 class="about__heading">О сервисе</h2>
+      <h2 class="about__heading page-main__heading">О сервисе</h2>
       <p class="about__text">Любое путешествие веселее с&nbsp;попутчиками, которые на&nbsp;одной волне с&nbsp;тобой!
         Делитесь своими идеями путешествий и&nbsp;черпайте вдохновение в&nbsp;чужих.
       </p>
@@ -112,8 +112,8 @@
     </div>
   </section>
 
-  <section class="destinations page-main__section-light">
-    <h2 class="destinations__heading">Направления</h2>
+  <section class="destinations page-main__section page-main__section--light">
+    <h2 class="destinations__heading page-main__heading">Направления</h2>
     <p class="destinations__text">Мы&nbsp;не&nbsp;продаем туры и&nbsp;ничего не&nbsp;рекламируем.
       Люди сами пишут о&nbsp;странах, куда хотели&nbsp;бы отправиться и&nbsp;чем можно там заняться.
     </p>
@@ -175,8 +175,8 @@
 
   </section>
 
-  <section class="companions page-main__section-dark">
-    <h2 class="companions__heading">Попутчики</h2>
+  <section class="companions page-main__section page-main__section--dark">
+    <h2 class="companions__heading page-main__heading">Попутчики</h2>
     <p class="companions__text">
       Все мы&nbsp;индивидуальны и&nbsp;у&nbsp;каждого свой взгляд на&nbsp;идеальный отдых.
       Одному нужен пляж и&nbsp;коктейль, а&nbsp;другому маршрут для хайкинга.
@@ -247,9 +247,9 @@
     <button class="btn btn--rectangular companions__more" type="button">Показать всех</button>
   </section>
 
-  <section class="add-profile page-main__section-light">
+  <section class="add-profile page-main__section page-main__section--light">
     <div class="add-profile__wrapper">
-      <h2 class="add-profile__heading">Добавьте свой профиль</h2>
+      <h2 class="add-profile__heading page-main__heading">Добавьте свой профиль</h2>
       <img class="add-profile__picture" src="http://placehold.it/102x95">
     </div>
     <dl class="add-profile__payment payment">
@@ -264,7 +264,7 @@
   </section>
 
   <section class="interested page-main__section-dark">
-    <h2 class="interested__heading">Заинтересовались?</h2>
+    <h2 class="interested__heading page-main__heading">Заинтересовались?</h2>
     <p class="interested__text">
       Зарегистрируйтесь,это быстро и&nbsp;бесплатно! Уже зарегистрированы? Тогда скорее <a href="#">авторизуйтесь.</a>
     </p>
@@ -289,7 +289,7 @@
     </ul>
   </section>
 
-  <section class="route page-main__section-yellow">
+  <section class="route page-main__section page-main__section--yellow">
     <div class="route__address">
       <svg width="39" height="39"></svg>
       <p class="route__place">ул. Большая Конюшенная, 19/8</p>
