@@ -1,0 +1,12 @@
+.interested {
+  position: relative;
+  z-index: 4;
+
+  &__heading {
+    margin-top: 72px;
+  }
+
+  &__actions {
+    padding-bottom: 30px;
+  }
+}

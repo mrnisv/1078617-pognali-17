@@ -20,7 +20,15 @@ a {
 @import "blocks/main-hero";
 @import "review";
 @import "steps";
-@import "about";
 @import "blocks/page-main";
 @import "action-buttons";
 @import "blocks/destinations";
+@import "destination-card";
+@import "blocks/companions.scss";
+@import "comp-card";
+@import "ways-of-travelling";
+@import "./blocks/add-profile";
+@import "payment";
+@import "map";
+@import "./blocks/interested";
+@import "./blocks/route";

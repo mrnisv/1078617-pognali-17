@@ -12,6 +12,8 @@
 
   margin-bottom: 75px;
 
+  counter-reset: section;
+
   &__step-item {
     background-color: $color-light-gold;
     color: $color-dark;

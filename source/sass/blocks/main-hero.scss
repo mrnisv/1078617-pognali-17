@@ -2,6 +2,7 @@
 
 .main-hero {
   position: relative;
+  z-index: 8;
 
   &__heading {
     margin-left: -25px;

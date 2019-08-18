@@ -2,7 +2,6 @@ html,
 body {
   width: 100%;
   height: 100%;
-  counter-reset: section;
 }
 
 body {
@@ -14,6 +13,11 @@ body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   line-height: 1.42;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
 
 *,
@@ -63,4 +67,3 @@ h6 {
   font-weight: 400;
   line-height: 1.42;
 }
-

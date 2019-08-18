@@ -2,13 +2,24 @@
 
 .destinations {
   padding-top: 122px;
+  position: relative;
+  z-index: 7;
 
   &__text {
     padding-right: 53px;
     margin-bottom: 66px;
+  }
 
-    font-size: 16px;
-    font-weight: 300;
-    color: $color-greyish-brown;
+  &__cards {
+    margin-bottom: 25px;
+  }
+
+  &__more {
+    margin-bottom: 30px;
+  }
+
+  &__heading,
+  &__text {
+    padding: 0 38px 0 25px;
   }
 }

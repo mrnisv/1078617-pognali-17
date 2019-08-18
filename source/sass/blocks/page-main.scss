@@ -16,6 +16,9 @@
     &--light {
       background-color: $color-pale-grey-middle;
     }
+    &--yellow {
+      background-color: $color-light-gold;
+    }
   }
 
   &__heading {
@@ -26,5 +29,22 @@
     color: $color-mango-two;
 
     margin-bottom: 23px;
+  }
+
+  &__text {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.38;
+    text-align: left;
+    color: $color-white;
+
+    margin-bottom: 25px;
+
+    &--bold {
+      font-weight: 700;
+    }
+    &--dark {
+      color: $color-greyish-brown;
+    }
   }
 }

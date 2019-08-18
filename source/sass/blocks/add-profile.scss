@@ -1,0 +1,21 @@
+.add-profile {
+  padding-left: 50px;
+  position: relative;
+  z-index: 5;
+
+  &__wrapper {
+    margin-top: 37px;
+
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__bussiness-rates {
+    display: block;
+    padding-bottom: 38px;
+
+    color: $color-dark-blue-grey;
+    font-size: 16px;
+    font-weight: 700;
+  }
+}
