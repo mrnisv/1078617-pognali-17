@@ -1,9 +1,10 @@
 .route {
+  padding-bottom: 35px;
   position: relative;
   z-index: 3;
 
   &__navigate-to {
-    margin-bottom: 35px;
+    //margin-bottom: 35px;
   }
 
   &__address {

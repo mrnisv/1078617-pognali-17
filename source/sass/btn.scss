@@ -1,6 +1,7 @@
 @import "colors";
 
 .btn {
+  display: block;
   font-family: "BloggerSans", "Helvetica", sans-serif;
   font-size: 17px;
   font-weight: 700;
@@ -27,6 +28,17 @@
 
     &:hover {
       background-color: $color-mango-three;
+    }
+  }
+
+  &--rounded-white {
+    width: 100%;
+    border-radius: 40px;
+    padding: 10px 40px 6px 37px;
+    background-color: $color-white;
+
+    &:hover {
+      opacity: 0.5;
     }
   }
 

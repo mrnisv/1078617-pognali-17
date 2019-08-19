@@ -1,0 +1,14 @@
+.filter-companions {
+  margin: 0 auto 28px;
+  background-color: $color-light-gold;
+  border-radius: 10px;
+  max-width: 572px;
+  padding: 26px;
+
+  &__heading {
+    color: $color-dark-slate-blue;
+    font-weight: bold;
+    font-size: 22px;
+    margin-bottom: 21px;
+  }
+}
