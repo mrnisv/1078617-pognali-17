@@ -20,10 +20,14 @@ img {
   height: auto;
 }
 
+:root {
+  box-sizing: border-box;
+}
+
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
+  box-sizing: inherit;
 }
 
 .visually-hidden:not(:focus):not(:active),
@@ -65,7 +69,8 @@ ol {
   margin: 0;
 }
 
-ul li {
+ul li,
+ol li {
   list-style: none;
 }
 

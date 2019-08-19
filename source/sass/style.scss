@@ -1,44 +1,37 @@
-:root {
-  box-sizing: border-box;
-}
-
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-}
-
-a {
-  text-decoration: none;
-}
-
 @import "normalize";
 @import "btn";
 @import "fonts";
-@import "header";
+@import "blocks/header";
 @import "settings";
 @import "blocks/main-hero";
-@import "review";
-@import "steps";
+@import "blocks/review";
+@import "blocks/steps";
 @import "blocks/page-main";
-@import "action-buttons";
+@import "blocks/action-buttons";
 @import "blocks/destinations";
-@import "destination-card";
-@import "blocks/companions.scss";
-@import "comp-card";
-@import "ways-of-travelling";
-@import "./blocks/add-profile";
-@import "payment";
-@import "map";
-@import "./blocks/interested";
-@import "./blocks/route";
-@import "signup";
-@import "actions";
+@import "blocks/destination-card";
+@import "blocks/companions";
+@import "blocks/comp-card";
+@import "blocks/ways-of-travelling";
+@import "blocks/add-profile";
+@import "blocks/payment";
+@import "blocks/map";
+@import "blocks/interested";
+@import "blocks/route";
+@import "blocks/signup";
+@import "blocks/actions";
 @import "blocks/page-footer";
-@import "socials";
-@import "./blocks/catalog-main";
-@import "companion";
-@import "filter-companions";
-@import "./blocks/search-result";
-@import "filter-item";
-@import "filter";
+@import "blocks/socials";
+@import "blocks/catalog-main";
+@import "blocks/companion";
+@import "blocks/filter-companions";
+@import "blocks/search-result";
+@import "blocks/filter-item";
+@import "blocks/filter";
+@import "blocks/form-main";
+@import "blocks/plans";
+@import "blocks/add-plan";
+@import "blocks/trip-form";
+@import "blocks/user";
+@import "blocks/dropdown";
+@import "blocks/step-input";

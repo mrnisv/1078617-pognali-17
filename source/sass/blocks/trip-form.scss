@@ -1,0 +1,63 @@
+.trip-form {
+  &__list {
+    margin-bottom: 44px;
+  }
+
+  &__item {
+    background-color: $color-white;
+    border-radius: 10px;
+    padding: 24px;
+    margin-bottom: 10px;
+
+    &:first-child {
+      .trip-form__next {
+        margin-bottom: 0;
+      }
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__heading {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 18px;
+  }
+
+  &__text {
+    color: $color-greyish-brown;
+    font-size: 16px;
+    margin-bottom: 14px;
+  }
+
+  &__next {
+    width: 100%;
+    margin-bottom: 19px;
+
+    &.btn--rounded-transparent {
+      margin-bottom: 0;
+    }
+  }
+
+  &__dropdown {
+    margin-bottom: 22px;
+  }
+
+  &__calendar {
+    margin-bottom: 23px;
+  }
+
+  &__country {
+    margin-bottom: 23px;
+  }
+
+  &__input {
+    margin-bottom: 21px;
+  }
+
+  &__checkbox {
+    margin-bottom: 21px;
+  }
+}

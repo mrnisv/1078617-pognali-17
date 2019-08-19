@@ -272,11 +272,16 @@
         <div class="companion__user-info">
           <a href="#" class="companion__photo"><img src="img/firsova-mobile@1x.jpg"></a>
           <a href="#" class="companion__name">Таня Фирсова</a>
-          <div class="companion__likes">1,5 м</div>
+          <div class="companion__likes">
+            <!--<span class="companion__icon-wrapper">-->
+              <!--<span class="companion__like-icon">.</span>-->
+            <!--</span>-->
+            <span class="companion__like-number">1,5 м</span>
+          </div>
           <div class="companion__tags">#ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи</div>
         </div>
         <div class="companion__wants-to-travel">
-          <p class="companion__section-name">хочет посетить:</p>
+          <span class="companion__section-name">хочет посетить:</span>
           <ul class="companion__countries-list">
             <li class="companion__country"><img class="companion__flag-icon" src="./img/thailand-flag.png"><span>Шри Ланка</span></li>
             <li class="companion__country"><img class="companion__flag-icon" src="./img/thailand-flag.png"><span>Тайланд</span></li>
@@ -528,10 +533,10 @@
       </div>
 
     </div>
-    <a href="#" class="search-result__more btn btn--rounded btn--rounded-transparent">Показать еще</a>
+    <a href="#" class="search-result__more btn btn--rounded btn--rounded-transparent"><span>Показать еще</span></a>
     <div class="search-result__control-arrows">
-      <a href="#" class="control-arrows control-arrows__item--previous"></a>
-      <a href="#" class="control-arrows control-arrows__item--next"></a>
+      <a href="#" class="search-result__arrow-left"></a>
+      <a href="#" class="search-result__arrow-right"></a>
     </div>
   </section>
 </main>

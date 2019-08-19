@@ -30,7 +30,6 @@
     }
 
     &--active {
-
       svg {
         opacity: 1;
         //path: $color-dark-slate-blue;
@@ -40,7 +39,5 @@
     &--transparent {
       background-color: transparent;
     }
-
   }
-
 }

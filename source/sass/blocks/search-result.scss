@@ -1,9 +1,115 @@
 .search-result {
+  padding-bottom: 38px;
+
   &__cards-container {
     margin-bottom: 20px;
   }
 
   &__companion {
     margin: 0 auto 10px;
+  }
+
+  &__more {
+    margin-bottom: 23px;
+
+    span {
+      position: relative;
+      padding-left: 24px;
+
+      &::before {
+        background-color: $color-dark-slate-blue;
+        content: "";
+        top: 7px;
+        left: -7px;
+        position: absolute;
+        width: 16px;
+        height: 2px;
+      }
+
+      &::after {
+        background-color: $color-dark-slate-blue;
+        content: "";
+        position: absolute;
+        height: 16px;
+        width: 2px;
+        top: 0;
+        left: 0;
+      }
+    }
+  }
+
+  &__control-arrows {
+    display: flex;
+    height: 50px;
+    margin-bottom: 46px;
+  }
+
+  &__arrow-left {
+    position: relative;
+    display: block;
+    background-color: $color-white;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    width: 50%;
+    transition: 0.3s;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      border-top: 7px solid transparent;
+      border-bottom: 7px solid transparent;
+      border-right: 11px solid $color-dark-slate-blue;
+      transition: 0.3s;
+    }
+
+    &:hover {
+      &::after {
+        opacity: 0.6;
+      }
+    }
+
+    &:active {
+      &::after {
+        opacity: 0.3;
+      }
+    }
+  }
+
+  &__arrow-right {
+    display: block;
+    position: relative;
+    background-color: $color-white;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-left: 1px solid rgba(0, 0, 0, 0.03);
+    width: 50%;
+    transition: 0.3s;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      right: 50%;
+      transform: translate(-50%, -50%);
+      border-top: 7px solid transparent;
+      border-bottom: 7px solid transparent;
+      border-left: 11px solid $color-dark-slate-blue;
+      transition: 0.3s;
+    }
+
+    &:hover {
+      &::after {
+        opacity: 0.6;
+      }
+    }
+
+    &:active {
+      &::after {
+        opacity: 0.3;
+      }
+    }
   }
 }

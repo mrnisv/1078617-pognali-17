@@ -32,12 +32,14 @@
     "*.js",
     "source/*.html",
     "source/js/**/*.js",
-    "source/img/**/*.svg",
     "source/sass/**/*.{sass,scss}"
   ],
   "engines": {
     "node": "8.16"
   },
   "dependencies": {
+    "normalize-scss": "^7.0.1",
+    "normalize.css": "^8.0.1",
+    "uninstall": "0.0.0"
   }
 }
