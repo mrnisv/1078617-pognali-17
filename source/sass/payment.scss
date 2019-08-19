@@ -1,8 +1,10 @@
 .payment {
   color: $color-greyish-brown;
   counter-reset: number;
+  margin: 0;
 
-  width: 200px;
+  //width: 200px;
+  width: 75%;
 
   &__name {
     position: relative;

@@ -3,6 +3,13 @@
   z-index: 3;
 
   &__navigate-to {
-    margin-bottom: 30px;
+    margin-bottom: 35px;
+  }
+
+  &__address {
+    display: flex;
+    align-items: center;
+    padding-top: 32px;
+    margin-bottom: 35px;
   }
 }

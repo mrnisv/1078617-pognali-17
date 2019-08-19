@@ -7,7 +7,6 @@
   align-items: center;
   justify-content: center;
 
-
   &__item {
     padding: 13px;
     width: 40px;
@@ -16,9 +15,24 @@
     border-radius: 50%;
     background-color: $color-mango-two;
     flex-shrink: 0;
+    transition: 0.3s;
+
+    &:hover {
+      background-color: $color-foxy;
+    }
+
+    &:active {
+      .action-buttons__pic {
+        opacity: 0.3;
+      }
+    }
 
     &:nth-child(2) {
       background-color: $color-mango-three;
+
+      &:hover {
+        background-color: $color-mango-two;
+      }
     }
   }
 

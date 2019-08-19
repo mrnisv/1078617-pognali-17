@@ -13,17 +13,33 @@
 
   cursor: pointer;
 
+  transition: 0.3s;
+
+  &:active {
+    .btn__inner-text {
+      opacity: 0.3;
+    }
+  }
+
   &--rounded {
     border-radius: 40px;
     padding: 10px 40px 6px 37px;
 
-    &-transparent {
-      background-color: transparent;
+    &:hover {
+      background-color: $color-mango-three;
     }
+  }
 
-    &-blue {
-      background-color: $color-light-blue;
-    }
+  &-transparent {
+    background-color: transparent;
+  }
+
+  &-blue {
+    background-color: $color-light-blue;
+  }
+
+  &__inner-text {
+
   }
 
   &--rectangular {
@@ -34,18 +50,21 @@
     padding: 24px;
     position: relative;
 
+    &:active {
+      &::after {
+        opacity: 0.3;
+      }
+    }
+
     &::after {
       content: "";
       position: absolute;
-      top: 28px;
       right: 23px;
-
-      width: 0;
-      height: 0;
-      border-top: 10px solid transparent;
-      border-bottom: 10px solid transparent;
-
-      border-left: 10px solid $color-dark-slate-blue;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      border-top: 7px solid transparent;
+      border-bottom: 7px solid transparent;
+      border-left: 11px solid $color-dark-slate-blue;
     }
 
     &-bordered {

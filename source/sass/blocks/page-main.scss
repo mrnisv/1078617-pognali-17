@@ -16,8 +16,17 @@
     &--light {
       background-color: $color-pale-grey-middle;
     }
+
     &--yellow {
       background-color: $color-light-gold;
+    }
+
+    &--white-inverted {
+      margin-top: -38px;
+      padding-top: 38px;
+      background-color: $color-white;
+      border-top-right-radius: 20px;
+      border-top-left-radius: 20px;
     }
   }
 
@@ -43,6 +52,7 @@
     &--bold {
       font-weight: 700;
     }
+
     &--dark {
       color: $color-greyish-brown;
     }

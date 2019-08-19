@@ -1,21 +1,54 @@
 .add-profile {
-  padding-left: 50px;
+  padding-left: 25px;
+  padding-bottom: 38px;
   position: relative;
   z-index: 5;
 
   &__wrapper {
     margin-top: 37px;
+    margin-bottom: 30px;
+    padding-left: 25px;
 
     display: flex;
     justify-content: space-between;
   }
 
-  &__bussiness-rates {
-    display: block;
-    padding-bottom: 38px;
+  &__payment {
+    padding-left: 25px;
+    padding-bottom: 33px;
+  }
 
+  &__toggle-popup {
+    display: block;
     color: $color-dark-blue-grey;
     font-size: 16px;
     font-weight: 700;
+    text-align: center;
+
+    &--opened {
+      padding: 23px 0;
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
+      text-transform: uppercase;
+      background-color: $color-pale-grey-light;
+    }
+  }
+
+  &__popup {
+    background-color: $color-white;
+    padding: 33px 26px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+
+
+    .payment {
+      width: 195px;
+
+      &__name {
+        &::after {
+          display: none;
+        }
+      }
+    }
   }
 }
