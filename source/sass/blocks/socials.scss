@@ -1,0 +1,33 @@
+.socials {
+  display: flex;
+  height: 45px;
+  align-items: center;
+  justify-content: center;
+
+  &__icon-wrapper {
+    position: relative;
+    width: 45px;
+    height: 45px;
+    padding: 14px 23px;
+    background-color: $color-light-gold;
+    border-radius: 50%;
+    transition: 0.3s;
+
+    &:hover {
+      background-color: $color-mango-three;
+    }
+
+    &:active {
+      svg {
+        opacity: 0.3;
+      }
+    }
+
+    svg {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+}

@@ -1,0 +1,30 @@
+.user {
+  padding: 23px 25px 33px;
+
+  &__level {
+    color: $color-greyish-brown;
+    font-size: 18px;
+
+    span {
+      color: $color-dark;
+      font-size: 38px;
+      font-weight: 700;
+    }
+  }
+
+  &__tags-list {
+    color: $color-greyish-brown;
+    font-size: 16px;
+  }
+
+  &__section-name {
+    color: $color-dark-slate-blue;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  .ways-of-travelling__way-item {
+    background-color: $color-white;
+  }
+}

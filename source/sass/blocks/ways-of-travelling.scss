@@ -1,0 +1,43 @@
+.ways-of-travelling {
+  display: flex;
+  justify-content: center;
+
+  &__way-item {
+    //opacity: 0.15;
+    //margin-right: 17px;
+
+    position: relative;
+    width: 33px;
+    height: 33px;
+    background-color: $color-pale-grey-middle;
+    border-radius: 50%;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    svg {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      opacity: 0.15;
+
+      &:first-child {
+        //plane icon
+        padding-right: 3px;
+      }
+    }
+
+    &--active {
+      svg {
+        opacity: 1;
+        //path: $color-dark-slate-blue;
+      }
+    }
+
+    &--transparent {
+      background-color: transparent;
+    }
+  }
+}

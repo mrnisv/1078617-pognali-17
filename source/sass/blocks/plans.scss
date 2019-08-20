@@ -1,0 +1,58 @@
+.plans {
+  background-color: $color-light-blue;
+  color: $color-dark-slate-blue;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  padding: 29px 26px 50px;
+  counter-reset: counter-num;
+
+  &__list {
+    margin-bottom: 30px;
+  }
+
+  &__item {
+    background-color: $color-white;
+    border-radius: 10px;
+    padding: 24px;
+    margin-bottom: 10px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__countries {
+    font-size: 16px;
+    padding-left: 19px;
+    font-weight: 700;
+    margin-bottom: 21px;
+    position: relative;
+
+    &::before {
+      counter-increment: counter-num;
+      content: counter(counter-num) ".";
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+  }
+
+  &__companions-number {
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+
+  &__dates {
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-bottom: 27px;
+  }
+
+  &__change {
+    color: rgba(0, 0, 0, 0.3);
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+}

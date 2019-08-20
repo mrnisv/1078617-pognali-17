@@ -1,0 +1,88 @@
+.comp-card {
+  &__wrapper {
+    position: relative;
+    width: 270px;
+    margin: 0 auto 10px;
+  }
+
+  &__level {
+    position: absolute;
+    background-color: red;
+  }
+
+  &__avatar-wrapper {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    overflow: hidden;
+  }
+
+  &__avatar {
+    min-height: 100%;
+    min-width: 100%;
+    display: block;
+  }
+
+  &__user-info {
+    background-color: $color-white;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+    text-align: center;
+
+    padding: 0 46px 22px;
+  }
+
+  &__flags {
+    display: flex;
+    justify-content: center;
+    margin-top: -12px;
+    margin-bottom: 15px;
+  }
+
+  &__flag {
+    margin-right: 19px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__username {
+    position: relative;
+    margin-bottom: 16px;
+    color: $color-dark-slate-blue;
+    font-size: 21px;
+    font-weight: 700;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: -13px;
+      top: 7px;
+      width: 5px;
+      height: 5px;
+      border-radius: 2.5px;
+      background-color: $color-salmon;
+    }
+
+    &--online {
+      &::before {
+        content: "";
+        position: absolute;
+        left: -13px;
+        top: 7px;
+        width: 5px;
+        height: 5px;
+        border-radius: 2.5px;
+        background-color: $color-green-apple;
+      }
+    }
+  }
+
+  &__hashtags {
+    margin-bottom: 17px;
+
+    color: $color-greyish-brown;
+    font-size: 16px;
+  }
+}

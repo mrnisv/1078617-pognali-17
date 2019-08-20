@@ -1,0 +1,44 @@
+.actions {
+  &__item {
+    height: 45px;
+  }
+
+  &__img-wrapper {
+    position: relative;
+    width: 45px;
+    height: 45px;
+    margin-right: 16px;
+    padding: 14px 23px;
+    background-color: $color-dark-blue-grey-three;
+    border-radius: 50%;
+
+
+    svg {
+      path {
+        fill: $color-light-gold;
+      }
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  &__icon {
+    width: 18px;
+    height: 18px;
+
+    color: $color-light-gold;
+  }
+
+  &__text {
+    color: $color-light-gold;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+
+    &--dark {
+      color: $color-dark-blue-grey;
+    }
+  }
+}

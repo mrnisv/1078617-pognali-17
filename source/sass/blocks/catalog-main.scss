@@ -1,0 +1,11 @@
+.catalog-main {
+  background-color: $color-pale-grey-middle;
+  padding: 0 25px;
+
+  &__heading {
+    color: $color-white;
+    font-size: 36px;
+    font-weight: bold;
+    margin-left: 27px;
+  }
+}

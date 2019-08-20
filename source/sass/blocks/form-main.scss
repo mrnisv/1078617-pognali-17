@@ -1,0 +1,11 @@
+.form-main {
+  background-color: $color-pale-grey-middle;
+  //padding: 0 25px 38px;
+
+  &__heading {
+    margin-bottom: 34px;
+    color: $color-dark-slate-blue;
+    font-size: 24px;
+    font-weight: 700;
+  }
+}
