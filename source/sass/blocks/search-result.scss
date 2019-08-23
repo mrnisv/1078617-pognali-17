@@ -1,8 +1,15 @@
 .search-result {
   padding-bottom: 38px;
 
+
+  @media (min-width: 1200px) {
+    width: 70%;
+  }
+
+
   &__cards-container {
     margin-bottom: 20px;
+
   }
 
   &__companion {
@@ -42,6 +49,12 @@
     display: flex;
     height: 50px;
     margin-bottom: 46px;
+
+    @media (min-width: 768px) {
+      height: auto;
+      width: 15%;
+      margin-bottom: 0;
+    }
   }
 
   &__arrow-left {
@@ -88,6 +101,10 @@
     width: 50%;
     transition: 0.3s;
 
+    @media (min-width: 768px) {
+      border-left: none;
+    }
+
     &::after {
       content: "";
       position: absolute;
@@ -110,6 +127,50 @@
       &::after {
         opacity: 0.3;
       }
+    }
+  }
+
+  &__pagination {
+    @media (min-width: 768px) {
+      padding: 42px 49px;
+      background-color: $color-white;
+      border-radius: 20px;
+      display: flex;
+      justify-content: space-between;
+      max-width: 950px;
+      margin: 0 auto 62px;
+    }
+  }
+
+  &__pages {
+    display: none;
+
+    @media (min-width: 768px) {
+      display: inherit;
+    }
+  }
+
+  &__page {
+
+    @media (min-width: 768px) {
+      font-size: 20px;
+      color: $color-dark;
+      font-weight: 700;
+      text-align: center;
+      padding: 12px 17px 11px;
+      //position: relative;
+      width: 43px;
+      height: 43px;
+      border-radius: 50%;
+      transition: 0.3s;
+
+      &:hover {
+        color: rgba(22, 28, 53, 0.6);
+      }
+    }
+
+    &--active {
+      background-color: $color-light-gold;
     }
   }
 }

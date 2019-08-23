@@ -4,6 +4,10 @@
   position: relative;
   z-index: 5;
 
+  @media (min-width: 768px) {
+    padding-left: 75px;
+  }
+
   &__wrapper {
     margin-top: 37px;
     margin-bottom: 30px;
@@ -11,6 +15,14 @@
 
     display: flex;
     justify-content: space-between;
+  }
+
+  &__picture {
+    @media (min-width: 768px) {
+      position: absolute;
+      bottom: 70px;
+      right: 82px;
+    }
   }
 
   &__payment {

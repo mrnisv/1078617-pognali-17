@@ -11,6 +11,10 @@
   color: $color-dark;
   background-color: $color-light-gold;
 
+  @media (min-width: 768px) {
+    font-size: 24px;
+  }
+
   border: none;
 
   cursor: pointer;
@@ -25,17 +29,23 @@
 
   &--rounded {
     border-radius: 40px;
-    padding: 10px 40px 6px 37px;
+    //padding: 10px 40px 6px 37px;
+    padding: 15px 40px 9px 37px;
+
+    @media (min-width: 768px) {
+      font-size: 24px;
+      height: 50px;
+    }
 
     &:hover {
       background-color: $color-mango-three;
     }
   }
 
-  &--rounded-white {
-    width: 100%;
-    border-radius: 40px;
-    padding: 10px 40px 6px 37px;
+  &--white {
+
+    //border-radius: 40px;
+    //padding: 10px 40px 6px 37px;
     background-color: $color-white;
 
     &:hover {

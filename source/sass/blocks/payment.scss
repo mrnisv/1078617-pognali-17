@@ -6,6 +6,11 @@
   //width: 200px;
   width: 75%;
 
+  @media (min-width: 768px) {
+    font-size: 28px;
+    position: relative;
+  }
+
   &__name {
     position: relative;
 
@@ -27,6 +32,14 @@
       border-radius: 50%;
       background-color: $color-light-gold;
       color: $color-white;
+
+      @media (min-width: 768px) {
+        padding: 23px;
+        width: 67px;
+        height: 67px;
+        left: -57px;
+        right: auto;
+      }
     }
 
     &--first {
@@ -45,6 +58,12 @@
   &__rate {
     margin-left: 0;
     padding-bottom: 14px;
+
+    @media (min-width: 768px) {
+      position: absolute;
+      right: 0;
+      margin-top: -32px;
+    }
 
     &:last-child {
       border-bottom: 1px solid rgba(0, 0, 0, 0.05);

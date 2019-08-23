@@ -5,10 +5,28 @@
   max-width: 572px;
   padding: 26px;
 
+  @media (min-width: 768px) {
+    width: 100%;
+    max-width: 950px;
+  }
+
+  @media (min-width: 1200px) {
+    width: 21%;
+    height: fit-content;
+    order: 2;
+    margin: 0 0 0 85px;
+  }
+
   &__heading {
+    margin-right: 152px;
     color: $color-dark-slate-blue;
     font-weight: bold;
     font-size: 22px;
     margin-bottom: 21px;
+
+    @media (min-width: 768px) {
+      font-size: 30px;
+      margin-bottom: 36px;
+    }
   }
 }

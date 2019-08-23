@@ -14,6 +14,14 @@
 
   counter-reset: section;
 
+  @media (min-width: 768px) {
+    width: calc(100% + 82px);
+    margin-top: -101px;
+    margin-bottom: 138px;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
   &__step-item {
     background-color: $color-light-gold;
     color: $color-dark;
@@ -25,6 +33,15 @@
 
     border-radius: 10px;
 
+    @media (min-width: 768px) {
+      border-radius: 0 0 10px 10px;
+      padding: 31px 99px 62px 34px;
+      font-size: 24px;
+      width: 50%;
+      margin-top: 0;
+      margin-left: -10px;
+    }
+
     &::after {
       counter-increment: section;
       content: counter(section);
@@ -32,13 +49,22 @@
       right: 23px;
       top: 23px;
       color: $color-white;
+
+      @media (min-width: 768px) {
+        left: 34px;
+        top: 89px;
+      }
     }
 
     &--first {
       background-color: $color-mango-two;
 
-      border-top-right-radius: 10px;
-      border-top-left-radius: 10px;
+      border-radius: 10px 10px 0 0;
+
+      @media (min-width: 768px) {
+        border-radius: 10px 0 0 0;
+        margin-left: -33px;
+      }
 
       &::after {
         counter-increment: section;
@@ -47,16 +73,23 @@
         right: 23px;
         top: 23px;
         color: $color-white;
+
+        @media (min-width: 768px) {
+          left: 34px;
+          top: 89px;
+        }
       }
     }
 
     &--second {
       background-color: $color-mango;
 
-      margin-top: -14px;
+      border-radius: 10px 10px 0 0;
 
-      border-top-right-radius: 10px;
-      border-top-left-radius: 10px;
+      @media (min-width: 768px) {
+        border-radius: 10px 10px 0 0;
+        margin-left: -10px;
+      }
 
       &::after {
         counter-increment: section;
@@ -65,16 +98,25 @@
         right: 23px;
         top: 23px;
         color: $color-white;
+
+        @media (min-width: 768px) {
+          left: 34px;
+          top: 89px;
+        }
       }
     }
 
     &--third {
       background-color: $color-mango-three;
 
-      margin-top: -14px;
+      border-radius: 10px 10px 0 0;
 
-      border-top-right-radius: 10px;
-      border-top-left-radius: 10px;
+      @media (min-width: 768px) {
+        border-top-right-radius: 0;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 10px;
+        margin-left: -33px;
+      }
 
       &::after {
         counter-increment: section;
@@ -83,23 +125,12 @@
         right: 23px;
         top: 23px;
         color: $color-white;
+
+        @media (min-width: 768px) {
+          left: 34px;
+          top: 89px;
+        }
       }
     }
-
-    //&:nth-child(4) {
-    //  background-color: $color-light-gold;
-    //
-    //  margin-top: -14px;
-    //
-    //  border-radius: 10px;
-    //
-    //  &::after {
-    //    content: "4";
-    //    position: absolute;
-    //    right: 23px;
-    //    top: 23px;
-    //    color: $color-white;
-    //  }
-    //}
   }
 }

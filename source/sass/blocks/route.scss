@@ -3,6 +3,11 @@
   position: relative;
   z-index: 3;
 
+  @media (min-width: 1200px) {
+    padding-bottom: 60px;
+    padding-top: 120px;
+  }
+
   &__navigate-to {
     //margin-bottom: 35px;
   }
@@ -12,5 +17,28 @@
     align-items: center;
     padding-top: 32px;
     margin-bottom: 35px;
+
+    @media (min-width: 768px) {
+      padding-top: 47px;
+    }
+
+    @media (min-width: 1200px) {
+      padding-right: 148px;
+    }
+  }
+
+  &__container {
+    @media (min-width: 1200px) {
+      display: flex;
+      align-items: center;
+
+      .btn--rectangular-bordered {
+        height: 81px;
+        max-width: 324px;
+      }
+    }
+  }
+  .container {
+    max-width: 1040px;
   }
 }

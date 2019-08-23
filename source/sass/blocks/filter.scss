@@ -1,5 +1,11 @@
 .filter {
   &__submit {
     margin-top: 22px;
+    width: 100%;
+
+    @media (min-width: 768px) {
+      margin-top: 36px;
+    }
   }
+
 }

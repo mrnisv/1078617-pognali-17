@@ -3,6 +3,19 @@
     position: relative;
     width: 270px;
     margin: 0 auto 10px;
+
+    @media (min-width: 768px) {
+      margin: 0;
+      width: 285px;
+    }
+
+    @media (min-width: 1200px) {
+      margin-right: 60px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
   }
 
   &__level {
@@ -30,6 +43,10 @@
     text-align: center;
 
     padding: 0 46px 22px;
+
+    @media (min-width: 768px) {
+      padding: 0 35px 22px;
+    }
   }
 
   &__flags {
@@ -84,5 +101,9 @@
 
     color: $color-greyish-brown;
     font-size: 16px;
+
+    @media (min-width: 768px) {
+      font-size: 20px;
+    }
   }
 }

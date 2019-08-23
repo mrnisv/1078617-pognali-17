@@ -6,21 +6,66 @@
   position: relative;
   z-index: 7;
 
-  &__text {
-    padding-right: 53px;
-    margin-bottom: 66px;
+  @media (min-width: 768px) {
+    padding-bottom: 88px;
   }
+
+  &__container {
+    @media (min-width: 1200px) {
+      display: flex;
+    }
+  }
+
+  &__text {
+    padding: 0 38px 0 25px;
+    line-height: normal;
+
+    @media (min-width: 768px) {
+      max-width: 405px;
+      padding: 0 53px 0 0;
+      margin-bottom: 112px;
+    }
+  }
+
+  &__heading {
+    padding: 0 38px 0 25px;
+
+    @media (min-width: 768px) {
+      padding: 0;
+    }
+  }
+
 
   &__cards {
     margin-bottom: 25px;
+
+    @media (min-width: 768px) {
+      margin-bottom: 43px;
+    }
+
+    @media (min-width: 1200px) {
+      margin-right: 174px;
+    }
   }
 
   &__more {
     //margin-bottom: 30px;
+
+    @media (min-width: 1200px) {
+      display: none;
+    }
+
+    &--desktop {
+      display: none;
+
+      @media (min-width: 1200px) {
+        display: block;
+        max-width: 274px;
+      }
+    }
   }
 
-  &__heading,
-  &__text {
-    padding: 0 38px 0 25px;
+  &__right-part-wrapper {
+    order: 2;
   }
 }

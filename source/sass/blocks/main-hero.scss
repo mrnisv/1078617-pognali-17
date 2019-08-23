@@ -4,26 +4,117 @@
   position: relative;
   z-index: 8;
 
-  &__heading {
+  @media (min-width: 768px) {
+    padding-bottom: 88px;
+  }
+
+  &__background-picture {
+    position: relative;
     margin-left: -25px;
     height: 510px;
     width: calc(100% + 50px);
     background: url("../../img/traveller-illustration-mobile@1x.png") no-repeat bottom, url("../../img/globe-back-mobile@1x.jpg") no-repeat center;
     background-size: auto, cover;
-    background-color: #ff8d30;
+    background-color: $color-dark-slate-blue;
+
+    @media (min-width: 768px) {
+      margin-left: -75px;
+      height: 591px;
+      width: calc(100% + 150px);
+      background: url("../../img/traveller-illustration-tablet@1x.png") no-repeat 71% 30%, url("../../img/globe-back-tablet@1x.jpg") no-repeat center;
+      background-size: auto, 200%;
+    }
+  }
+
+  &__heading {
     font-size: 36px;
     font-weight: 700;
     line-height: 1.11;
     text-align: center;
     color: $color-white;
+    margin: 0 auto;
+
+    @media (min-width: 768px) {
+      font-size: 60px;
+      max-width: 391px;
+    }
+  }
+
+  &__subtitle {
+    &.page-main__heading {
+      margin-bottom: 36px;
+    }
+  }
+
+  &__reviews {
+
+    @media (min-width: 768px) {
+      position: absolute;
+      top: 342px;
+      left: 77px;
+      max-width: 260px;
+
+      &.review {
+        padding: 0;
+      }
+    }
   }
 
   &__about-service {
     padding: 0 38px 84px 25px;
+
+    @media (min-width: 768px) {
+      display: flex;
+      padding: 0;
+    }
+  }
+
+  &__left-about {
+    width: 72%;
+
+    @media (min-width: 768px) {
+      width: 57%;
+    }
+  }
+
+  &__right-about {
+
+  }
+
+  &__about-img-tablet {
+    display: none;
+
+    @media (min-width: 768px) {
+      display: inline;
+      width: 145%;
+      max-width: none;
+      margin-right: -42px;
+    }
+
+    @media (min-width: 1200px) {
+      width: 195%;
+      margin-top: -77px;
+    }
+  }
+
+  &__more {
+    display: none;
+
+    @media (min-width: 768px) {
+      width: 79%;
+      display: block;
+      max-width: 274px;
+    }
   }
 
   &__actions {
     position: relative;
     z-index: 2;
+
+    &.action-buttons {
+      @media (min-width: 768px) {
+        display: none;
+      }
+    }
   }
 }

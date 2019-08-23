@@ -1,6 +1,8 @@
 @import "../colors";
 
 .page-main {
+  line-height: normal;
+
   &__section {
     border-bottom-right-radius: 20px;
     border-bottom-left-radius: 20px;
@@ -8,6 +10,19 @@
     padding-top: 50px;
     padding-left: 25px;
     padding-right: 25px;
+    overflow: hidden;
+
+    @media (min-width: 768px) {
+      border-bottom-right-radius: 51px;
+      border-bottom-left-radius: 51px;
+      padding-left: 75px;
+      padding-right: 75px;
+    }
+
+    @media (min-width: 1200px) {
+      padding-left: 132px;
+      padding-right: 59px;
+    }
 
     &--dark {
       background-color: $color-dark-blue-grey;
@@ -38,6 +53,11 @@
     color: $color-mango-two;
 
     margin-bottom: 23px;
+
+    @media (min-width: 768px) {
+      font-size: 45px;
+      margin-bottom: 61px;
+    }
   }
 
   &__text {
@@ -49,8 +69,17 @@
 
     margin-bottom: 25px;
 
+    @media (min-width: 768px) {
+      font-size: 28px;
+      margin-bottom: 46px;
+    }
+
     &--bold {
       font-weight: 700;
+
+      @media (min-width: 768px) {
+        font-size: 21px;
+      }
     }
 
     &--dark {

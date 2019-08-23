@@ -1,11 +1,51 @@
 .catalog-main {
   background-color: $color-pale-grey-middle;
+  line-height: normal;
   padding: 0 25px;
 
+  @media (min-width: 768px) {
+    padding: 0 40px;
+  }
+
+  @media (min-width: 768px) {
+    //padding: 0;
+  }
+
+  &__sections-wrapper {
+    @media (min-width: 1200px) {
+      display: flex;
+      justify-content: center;
+      max-width: 1700px;
+      margin: 0 auto;
+    }
+  }
+
   &__heading {
+    position: relative;
+    width: calc(100% + 54px);
+    margin-left: -27px;
     color: $color-white;
     font-size: 36px;
     font-weight: bold;
-    margin-left: 27px;
+    padding-left: 27px;
+    padding-top: 50px;
+    background-color: $color-dark;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+
+  &__heading-name {
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 4px;
+      bottom: -8px;
+      left: 0;
+      border-radius: 4px;
+      background-color: $color-mango-two;
+    }
   }
 }

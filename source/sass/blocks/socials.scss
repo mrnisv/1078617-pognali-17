@@ -13,6 +13,12 @@
     border-radius: 50%;
     transition: 0.3s;
 
+    @media (min-width: 768px) {
+      width: 60px;
+      height: 60px;
+      padding: 23px 30px;
+    }
+
     &:hover {
       background-color: $color-mango-three;
     }
@@ -24,10 +30,33 @@
     }
 
     svg {
+      max-width: 21px;
+      max-height: 23px;
       position: absolute;
       left: 50%;
       top: 50%;
       transform: translate(-50%, -50%);
+
+      @media (min-width: 768px) {
+        max-width: 31px;
+        max-height: 28px;
+      }
+    }
+  }
+
+  &--transparent {
+    .socials {
+
+      &__icon-wrapper {
+        background-color: transparent;
+
+        svg {
+          path,
+          circle {
+            fill: #cccccc;
+          }
+        }
+      }
     }
   }
 }

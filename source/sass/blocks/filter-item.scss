@@ -1,12 +1,197 @@
 .filter-item {
+  border: none;
+  border-bottom: 1px solid $color-dirty-gold;
+  padding: 0;
+
+  &:last-of-type {
+    border-bottom: none;
+  }
+
+  @media (min-width: 768px) and (max-width: 1199px) {
+    display: flex;
+    align-items: baseline;
+    border-bottom: none;
+    padding: 13px 0;
+
+    &:first-child {
+      border-top: 1px solid $color-dirty-gold;
+      padding-top: 38px;
+    }
+
+    &:last-of-type {
+      border-bottom: 1px solid $color-dirty-gold;
+      padding-bottom: 51px;
+    }
+  }
+
+
   &__heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 13px 0;
     color: $color-dark-slate-blue;
-    font-weight: bold;
-    font-size: 16px;
+    font-weight: 700;
+    font-size: 18px;
+    text-transform: uppercase;
+    width: 100%;
+    cursor: pointer;
+
+    &--closed {
+      .filter-item__dropdown-icon {
+        transform: rotate(180deg);
+      }
+
+      & + .filter-item__list {
+        display: none;
+
+        @media (min-width: 768px) and (max-width: 1199px) {
+          display: inherit;
+        }
+      }
+    }
+
+    @media (min-width: 768px) and (max-width: 1199px) {
+      font-size: 20px;
+      width: 100px;
+      margin-right: 21px;
+      padding: 0;
+    }
+
+    &--travelling {
+      //padding: 0;
+      align-self: center;
+    }
+  }
+
+  &__dropdown-icon {
+    transform: rotate(180deg);
+    width: 8px;
+    height: 4px;
+
+    @media (min-width: 768px) and (max-width: 1199px) {
+      display: none;
+    }
   }
 
   &__list {
     color: $color-greyish-brown;
     font-size: 15px;
+    margin: 5px 0 19px;
+
+    @media (min-width: 768px) and (max-width: 1199px){
+      margin: 0;
+    }
+
+
+    &.ways-of-travelling {
+      justify-content: left;
+
+      .filter-item__label {
+        padding-left: 0;
+
+        @media (min-width: 768px) and (max-width: 1199px) {
+          padding-right: 0;
+          //margin: 0;
+        }
+
+
+        &::before {
+          display: none;
+        }
+
+        .filter-item__label-name {
+          &::after {
+            display: none;
+          }
+        }
+      }
+    }
+
+    @media (min-width: 768px) and (max-width: 1199px) {
+      display: flex;
+      font-size: 20px;
+    }
   }
+
+  &__option {
+    margin-bottom: 13px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    @media (min-width: 768px) and (max-width: 1199px) {
+      margin-bottom: 0;
+    }
+  }
+
+  &__label {
+    position: relative;
+    padding-left: 27px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: -2px;
+      top: -2px;
+
+      width: 16px;
+      height: 16px;
+
+      border: 1px solid $color-white;
+      border-radius: 4px;
+      background-color: $color-white;
+    }
+
+    @media (min-width: 768px) and (max-width: 1199px) {
+      padding-right: 26px;
+    }
+  }
+
+  &__label-name {
+    cursor: pointer;
+
+    &.ways-of-travelling__way-item {
+      display: block;
+
+      @media (min-width: 768px) and (max-width: 1199px) {
+        margin-right: 16px;
+        background-color: $color-white;
+      }
+
+      @media (min-width: 1200px) {
+        background-color: $color-white;
+      }
+    }
+  }
+
+  &__checkbox:checked ~ &__label-name {
+    cursor: pointer;
+
+    &.ways-of-travelling__way-item {
+      display: block;
+
+      svg {
+        opacity: 1;
+      }
+    }
+
+    &::after {
+      content: url("../img/tick.svg");
+
+      position: absolute;
+
+      left: 0;
+      top: 0;
+
+      width: 12px;
+      height: 12px;
+
+      @media (min-width: 768px) and (max-width: 1199px) {
+        top: -4px;
+      }
+    }
+  }
+
 }

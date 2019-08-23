@@ -3,20 +3,75 @@
   position: relative;
   z-index: 6;
 
+  @media (min-width: 768px) {
+    padding-bottom: 88px;
+  }
+
+  &__container {
+    @media (min-width: 1200px) {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+    }
+  }
+
   &__heading {
     margin-top: 73px;
+
+    @media (min-width: 768px) {
+      margin-top: 135px;
+    }
+  }
+
+  &__text {
+    @media (min-width: 768px) {
+      max-width: 430px;
+
+      &.page-main__text {
+        margin-bottom: 50px;
+      }
+    }
   }
 
   &__heading,
   &__text {
+    line-height: normal;
     padding: 0 38px 0 25px;
+
+    @media (min-width: 768px) {
+      padding: 0;
+    }
   }
 
   &__cards {
     margin-bottom: 20px;
+
+    @media (min-width: 768px) {
+      display: flex;
+      justify-content: space-between;
+      max-width: 618px;
+      margin: 0 auto 80px;
+    }
+
+    @media (min-width: 1200px) {
+      margin: 0;
+    }
   }
 
   &__more {
     //margin-bottom: 30px;
+
+    @media (min-width: 1200px) {
+      display: none;
+    }
+
+    &--desktop {
+      display: none;
+
+      @media (min-width: 1200px) {
+        display: block;
+        max-width: 274px;
+      }
+    }
   }
 }

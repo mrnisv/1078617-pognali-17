@@ -3,9 +3,6 @@
   justify-content: center;
 
   &__way-item {
-    //opacity: 0.15;
-    //margin-right: 17px;
-
     position: relative;
     width: 33px;
     height: 33px;
@@ -22,6 +19,7 @@
       top: 50%;
       transform: translate(-50%, -50%);
       opacity: 0.15;
+      transition: 0.3s;
 
       &:first-child {
         //plane icon
@@ -39,5 +37,18 @@
     &--transparent {
       background-color: transparent;
     }
+
+    @media (min-width: 768px) {
+      width: 43px;
+      height: 43px;
+
+      svg {
+        width: 19px;
+      }
+    }
+
+    //@media (min-width: 1200px) {
+    //  display: inherit;
+    //}
   }
 }
