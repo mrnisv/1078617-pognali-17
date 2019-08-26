@@ -5,4 +5,140 @@
   background-color: $color-pale-grey-dark;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
+
+  &__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 4px 32px 20px 25px;
+  }
+
+  &__icon {
+    svg {
+      width: 15px;
+      height: 10px;
+    }
+  }
+
+  &__dropdown {
+    width: 12px;
+    height: 12px;
+    border: none;
+    background-color: transparent;
+    outline: none;
+
+    svg {
+      width: 12px;
+      height: 12px;
+      path {
+        fill: #cccccc;
+      }
+    }
+  }
+
+  &__heading {
+    font-size: 16px;
+    color: $color-dark-blue-grey;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 37px;
+  }
+
+  &__materiks {
+    width: 100%;
+    padding-left: 30px;
+    font-size: 16px;
+    font-weight: 700;
+    color: $color-dark-blue-grey;
+    text-transform: uppercase;
+  }
+
+  &__materik {
+    margin-bottom: 14px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__countries {
+    padding: 0 50px 20px;
+  }
+
+
+  &__mobile-alphabet {
+    display: flex;
+    flex-wrap: wrap;
+    border-left: 1px solid #cbced9;
+    border-top: 1px solid #cbced9;
+    //max-width: 221px;
+    margin-bottom: 20px;
+
+    @media (min-width: 768px) {
+      border: 0;
+    }
+  }
+
+  &__mobile-letter-wrapper {
+    width: 20%;
+    background-color: $color-white;
+    border-right: 1px solid #cbced9;
+    border-bottom: 1px solid #cbced9;
+    padding: 16px 18px 15px;
+    text-align: center;
+    transition: 0.3s;
+
+    &:hover {
+      background-color: $color-dark-slate-blue;
+      opacity: 0.7;
+
+      .filter-countries__mobile-letter {
+        color: $color-white;
+        opacity: 1;
+      }
+    }
+
+    @media (min-width: 768px) {
+      border: 0;
+      background-color: transparent;
+
+      &:hover {
+        background-color: transparent;
+        opacity: 1;
+
+        .filter-countries__mobile-letter {
+          color: $color-dark-blue-grey;
+        }
+      }
+    }
+  }
+
+  &__mobile-letter {
+    font-size: 14px;
+    font-weight: 500;
+    color: $color-dark-slate-blue;
+
+    @media (min-width: 768px) {
+      font-size: 60px;
+      font-weight: 700;
+      color: $color-dark-blue-grey;
+      opacity: 0.2;
+    }
+  }
+
+  &__button-wrapper {
+    padding: 0 25px 40px;
+  }
+
+  &__button {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+
+    svg {
+      width: 12px;
+      margin-right: 10px;
+    }
+  }
+
 }

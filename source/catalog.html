@@ -34,9 +34,9 @@
 
         <!--это крестик-->
         <!--<svg viewBox="0 0 18 18" style="enable-background:new 0 0 18 18;" xml:space="preserve">-->
-          <!--<path class="st0" d="M10.3,9l7.4-7.4c0.4-0.4,0.4-0.9,0-1.3s-0.9-0.4-1.3,0L9,7.7L1.6,0.3c-0.4-0.4-0.9-0.4-1.3,0s-0.4,0.9,0,1.3-->
-          <!--L7.7,9l-7.4,7.4c-0.4,0.4-0.4,0.9,0,1.3v0c0.4,0.4,0.9,0.4,1.3,0L9,10.3l7.4,7.4c0.4,0.4,0.9,0.4,1.3,0v0c0.4-0.4,0.4-0.9,0-1.3-->
-          <!--L10.3,9z"/>-->
+        <!--<path class="st0" d="M10.3,9l7.4-7.4c0.4-0.4,0.4-0.9,0-1.3s-0.9-0.4-1.3,0L9,7.7L1.6,0.3c-0.4-0.4-0.9-0.4-1.3,0s-0.4,0.9,0,1.3-->
+        <!--L7.7,9l-7.4,7.4c-0.4,0.4-0.4,0.9,0,1.3v0c0.4,0.4,0.9,0.4,1.3,0L9,10.3l7.4,7.4c0.4,0.4,0.9,0.4,1.3,0v0c0.4-0.4,0.4-0.9,0-1.3-->
+        <!--L10.3,9z"/>-->
         </svg>
       </button>
 
@@ -157,67 +157,281 @@
     </ul>
 
   </div>
-
-
-  <!--<nav class="page-header__menu menu">-->
-  <!--<button class="menu__toggle" type="button">-->
-  <!--<svg viewBox="0 0 25 11" style="enable-background:new 0 0 25 11;" xml:space="preserve">-->
-  <!--<g>-->
-  <!--<path d="M1.5,3h22C24.3,3,25,2.3,25,1.5S24.3,0,23.5,0h-22C0.7,0,0,0.7,0,1.5S0.7,3,1.5,3z"/>-->
-  <!--<path d="M23.5,8h-22C0.7,8,0,8.7,0,9.5S0.7,11,1.5,11h22c0.8,0,1.5-0.7,1.5-1.5S24.3,8,23.5,8z"/>-->
-  <!--</g>-->
-  <!--</svg>-->
-  <!--</button>-->
-  <!--<div class="menu__wrapper">-->
-  <!--<ul class="menu__list">-->
-  <!--<li class="menu__item">-->
-  <!--<a href="#">О сервисе</a>-->
-  <!--</li>-->
-  <!--<li class="menu__item">-->
-  <!--<a href="#">Направления</a>-->
-  <!--</li>-->
-  <!--<li class="menu__item">-->
-  <!--<a href="#">Попутчики</a>-->
-  <!--</li>-->
-  <!--</ul>-->
-  <!--<button class="menu__auth btn btn&#45;&#45;rounded" type="button">Авторизация</button>-->
-  <!--<ul class="menu__actions actions">-->
-  <!--<li class="actions__item actions__item&#45;&#45;call">-->
-  <!--<a href="tel:+78005558628">-->
-  <!--<svg width="39" height="39"></svg>-->
-  <!--<span class="actions__phone-number">8 800 555-86-28</span>-->
-  <!--</a>-->
-  <!--</li>-->
-  <!--<li class="actions__item actions__item&#45;&#45;mail">-->
-  <!--<a href="mailto:mail@htmlacademy.ru">-->
-  <!--<svg width="39" height="39"></svg>-->
-  <!--<span class="actions__mailbox">mail@htmlacademy.ru</span>-->
-  <!--</a>-->
-  <!--</li>-->
-  <!--</ul>-->
-  <!--<div class="menu__socials socials">-->
-  <!--<ul class="socials__list">-->
-  <!--<li class="socials__item socials__item&#45;&#45;transparent">-->
-  <!--<a class="socials__link social__link&#45;&#45;facebook" href="https://www.facebook.com/htmlacademy">Мы в-->
-  <!--Фейсбуке</a>-->
-  <!--</li>-->
-  <!--<li class="socials__item socials__item&#45;&#45;transparent">-->
-  <!--<a class="socials__link social__link&#45;&#45;vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>-->
-  <!--</li>-->
-  <!--<li class="socials__item socials__item&#45;&#45;transparent">-->
-  <!--<a class="socials__link social__link&#45;&#45;instagram" href="https://www.instagram.com/htmlacademy">Мы в-->
-  <!--Инстаграме</a>-->
-  <!--</li>-->
-  <!--</ul>-->
-  <!--</div>-->
-  <!--</div>-->
-  <!--</nav>-->
 </header>
 <main class="catalog-main">
 
   <h1 class="catalog-main__heading"><span class="catalog-main__heading-name">Попутчики</span></h1>
 
-  <section class="filter-countries">фильтрация по странам</section>
+  <section class="filter-countries">
+    <div class="filter-countries__wrapper">
+    <span class="filter-countries__icon">
+      <svg viewBox="0 0 15 10">
+        <rect x="4" width="2" height="2"/>
+        <rect width="3" height="2"/>
+        <rect x="7" width="8" height="2"/>
+        <rect x="4" y="8" width="2" height="2"/>
+        <rect y="8" width="3" height="2"/>
+        <rect x="7" y="8" width="8" height="2"/>
+        <rect x="9" y="4" width="2" height="2"/>
+        <rect x="12" y="4" width="3" height="2"/>
+        <rect y="4" width="8" height="2"/>
+        </svg>
+    </span>
+      <div class="filter-countries__heading">фильтрация по странам</div>
+      <button class="filter-countries__dropdown" type="button">
+        <svg viewBox="0 0 12 12">
+          <path class="st0" d="M6.9,6l4.9-4.9c0.2-0.2,0.2-0.6,0-0.9s-0.6-0.2-0.9,0L6,5.1L1.1,0.2c-0.2-0.2-0.6-0.2-0.9,0s-0.2,0.6,0,0.9
+          L5.1,6l-4.9,4.9c-0.2,0.2-0.2,0.6,0,0.9v0c0.2,0.2,0.6,0.2,0.9,0L6,6.9l4.9,4.9c0.2,0.2,0.6,0.2,0.9,0v0c0.2-0.2,0.2-0.6,0-0.9
+          L6.9,6z"/>
+        </svg>
+      </button>
+      <div class="filter-countries__materiks">
+        <p class="filter-countries__materik">Европа</p>
+        <p class="filter-countries__materik">Азия</p>
+        <p class="filter-countries__materik">Америка</p>
+        <p class="filter-countries__materik">Острова</p>
+      </div>
+    </div>
+    <div class="filter-countries__countries">
+      <ul class="filter-countries__mobile-alphabet">
+        <li class="filter-countries__mobile-letter-wrapper">
+          <a href="#" class="filter-countries__mobile-letter">А</a>
+        </li>
+        <li class="filter-countries__mobile-letter-wrapper">
+          <a href="#" class="filter-countries__mobile-letter">Б</a>
+        </li>
+        <li class="filter-countries__mobile-letter-wrapper">
+          <a href="#" class="filter-countries__mobile-letter">В</a>
+        </li>
+        <li class="filter-countries__mobile-letter-wrapper">
+          <a href="#" class="filter-countries__mobile-letter">Г</a>
+        </li>
+        <li class="filter-countries__mobile-letter-wrapper">
+          <a href="#" class="filter-countries__mobile-letter">Д</a>
+        </li>
+        <li class="filter-countries__mobile-letter-wrapper">
+          <a href="#" class="filter-countries__mobile-letter">Е</a>
+        </li>
+        <li class="filter-countries__mobile-letter-wrapper">
+          <a href="#" class="filter-countries__mobile-letter">Ё</a>
+        </li>
+        <li class="filter-countries__mobile-letter-wrapper">
+          <a href="#" class="filter-countries__mobile-letter">Ж</a>
+        </li>
+        <li class="filter-countries__mobile-letter-wrapper">
+          <a href="#" class="filter-countries__mobile-letter">З</a>
+        </li>
+        <li class="filter-countries__mobile-letter-wrapper">
+          <a href="#" class="filter-countries__mobile-letter">И</a>
+        </li>
+        <li class="filter-countries__mobile-letter-wrapper">
+          <a href="#" class="filter-countries__mobile-letter">Й</a>
+        </li>
+        <li class="filter-countries__mobile-letter-wrapper">
+          <a href="#" class="filter-countries__mobile-letter">К</a>
+        </li>
+        <li class="filter-countries__mobile-letter-wrapper">
+          <a href="#" class="filter-countries__mobile-letter">Л</a>
+        </li>
+        <li class="filter-countries__mobile-letter-wrapper">
+          <a href="#" class="filter-countries__mobile-letter">М</a>
+        </li>
+        <li class="filter-countries__mobile-letter-wrapper">
+          <a href="#" class="filter-countries__mobile-letter">Н</a>
+        </li>
+        <li class="filter-countries__mobile-letter-wrapper">
+          <a href="#" class="filter-countries__mobile-letter">О</a>
+        </li>
+        <li class="filter-countries__mobile-letter-wrapper">
+          <a href="#" class="filter-countries__mobile-letter">П</a>
+        </li>
+        <li class="filter-countries__mobile-letter-wrapper">
+          <a href="#" class="filter-countries__mobile-letter">Р</a>
+        </li>
+        <li class="filter-countries__mobile-letter-wrapper">
+          <a href="#" class="filter-countries__mobile-letter">С</a>
+        </li>
+        <li class="filter-countries__mobile-letter-wrapper">
+          <a href="#" class="filter-countries__mobile-letter">Т</a>
+        </li>
+        <li class="filter-countries__mobile-letter-wrapper">
+          <a href="#" class="filter-countries__mobile-letter">У</a>
+        </li>
+        <li class="filter-countries__mobile-letter-wrapper">
+          <a href="#" class="filter-countries__mobile-letter">Ф</a>
+        </li>
+        <li class="filter-countries__mobile-letter-wrapper">
+          <a href="#" class="filter-countries__mobile-letter">Х</a>
+        </li>
+        <li class="filter-countries__mobile-letter-wrapper">
+          <a href="#" class="filter-countries__mobile-letter">Ц</a>
+        </li>
+        <li class="filter-countries__mobile-letter-wrapper">
+          <a href="#" class="filter-countries__mobile-letter">Ч</a>
+        </li>
+        <li class="filter-countries__mobile-letter-wrapper">
+          <a href="#" class="filter-countries__mobile-letter">Ш</a>
+        </li>
+        <li class="filter-countries__mobile-letter-wrapper">
+          <a href="#" class="filter-countries__mobile-letter">Щ</a>
+        </li>
+        <li class="filter-countries__mobile-letter-wrapper">
+          <a href="#" class="filter-countries__mobile-letter">Э</a>
+        </li>
+        <li class="filter-countries__mobile-letter-wrapper">
+          <a href="#" class="filter-countries__mobile-letter">Ю</a>
+        </li>
+        <li class="filter-countries__mobile-letter-wrapper">
+          <a href="#" class="filter-countries__mobile-letter">Я</a>
+        </li>
+      </ul>
+      <ul class="filter-countries__alphabet-countries alphabet-countries">
+        <li class="alphabet-countries__item">
+          <a href="#" class="alphabet-countries__letter">A</a>
+          <ul class="alphabet-countries__one-letter-countries">
+            <li class="alphabet-countries__country-wrapper">
+              <a href="#" class="alphabet-countries__country">Афганистан</a>
+            </li>
+            <li class="alphabet-countries__country-wrapper">
+              <a href="#" class="alphabet-countries__country">Албания</a>
+            </li>
+            <li class="alphabet-countries__country-wrapper">
+              <a href="#" class="alphabet-countries__country">Алгерия</a>
+            </li>
+            <li class="alphabet-countries__country-wrapper">
+              <a href="#" class="alphabet-countries__country">Андорра</a>
+            </li>
+            <li class="alphabet-countries__country-wrapper">
+              <a href="#" class="alphabet-countries__country">Аргентина</a>
+            </li>
+            <li class="alphabet-countries__country-wrapper">
+              <a href="#" class="alphabet-countries__country">Армения</a>
+            </li>
+            <li class="alphabet-countries__country-wrapper">
+              <a href="#" class="alphabet-countries__country">Австралия</a>
+            </li>
+            <li class="alphabet-countries__country-wrapper">
+              <a href="#" class="alphabet-countries__country">Австрия</a>
+            </li>
+            <li class="alphabet-countries__country-wrapper">
+              <a href="#" class="alphabet-countries__country">Азербайджан</a>
+            </li>
+          </ul>
+        </li>
+
+        <!--<li class="alphabet-countries__item">-->
+        <!--<a href="#" class="alphabet-countries__letter">A</a>-->
+        <!--<ul class="alphabet-countries__one-letter-countries">-->
+        <!--<li class="alphabet-countries__country-wrapper">-->
+        <!--<a href="#" class="alphabet-countries__country">Афганистан</a>-->
+        <!--</li>-->
+        <!--<li class="alphabet-countries__country-wrapper">-->
+        <!--<a href="#" class="alphabet-countries__country">Албания</a>-->
+        <!--</li>-->
+        <!--<li class="alphabet-countries__country-wrapper">-->
+        <!--<a href="#" class="alphabet-countries__country">Алгерия</a>-->
+        <!--</li>-->
+        <!--<li class="alphabet-countries__country-wrapper">-->
+        <!--<a href="#" class="alphabet-countries__country">Андорра</a>-->
+        <!--</li>-->
+        <!--<li class="alphabet-countries__country-wrapper">-->
+        <!--<a href="#" class="alphabet-countries__country">Аргентина</a>-->
+        <!--</li>-->
+        <!--<li class="alphabet-countries__country-wrapper">-->
+        <!--<a href="#" class="alphabet-countries__country">Армения</a>-->
+        <!--</li>-->
+        <!--<li class="alphabet-countries__country-wrapper">-->
+        <!--<a href="#" class="alphabet-countries__country">Австралия</a>-->
+        <!--</li>-->
+        <!--<li class="alphabet-countries__country-wrapper">-->
+        <!--<a href="#" class="alphabet-countries__country">Австрия</a>-->
+        <!--</li>-->
+        <!--<li class="alphabet-countries__country-wrapper">-->
+        <!--<a href="#" class="alphabet-countries__country">Азербайджан</a>-->
+        <!--</li>-->
+        <!--</ul>-->
+        <!--</li>-->
+
+        <!--<li class="alphabet-countries__item">-->
+        <!--<a href="#" class="alphabet-countries__letter">A</a>-->
+        <!--<ul class="alphabet-countries__one-letter-countries">-->
+        <!--<li class="alphabet-countries__country-wrapper">-->
+        <!--<a href="#" class="alphabet-countries__country">Афганистан</a>-->
+        <!--</li>-->
+        <!--<li class="alphabet-countries__country-wrapper">-->
+        <!--<a href="#" class="alphabet-countries__country">Албания</a>-->
+        <!--</li>-->
+        <!--<li class="alphabet-countries__country-wrapper">-->
+        <!--<a href="#" class="alphabet-countries__country">Алгерия</a>-->
+        <!--</li>-->
+        <!--<li class="alphabet-countries__country-wrapper">-->
+        <!--<a href="#" class="alphabet-countries__country">Андорра</a>-->
+        <!--</li>-->
+        <!--<li class="alphabet-countries__country-wrapper">-->
+        <!--<a href="#" class="alphabet-countries__country">Аргентина</a>-->
+        <!--</li>-->
+        <!--<li class="alphabet-countries__country-wrapper">-->
+        <!--<a href="#" class="alphabet-countries__country">Армения</a>-->
+        <!--</li>-->
+        <!--<li class="alphabet-countries__country-wrapper">-->
+        <!--<a href="#" class="alphabet-countries__country">Австралия</a>-->
+        <!--</li>-->
+        <!--<li class="alphabet-countries__country-wrapper">-->
+        <!--<a href="#" class="alphabet-countries__country">Австрия</a>-->
+        <!--</li>-->
+        <!--<li class="alphabet-countries__country-wrapper">-->
+        <!--<a href="#" class="alphabet-countries__country">Азербайджан</a>-->
+        <!--</li>-->
+        <!--</ul>-->
+        <!--</li>-->
+
+        <!--<li class="alphabet-countries__item">-->
+        <!--<a href="#" class="alphabet-countries__letter">A</a>-->
+        <!--<ul class="alphabet-countries__one-letter-countries">-->
+        <!--<li class="alphabet-countries__country-wrapper">-->
+        <!--<a href="#" class="alphabet-countries__country">Афганистан</a>-->
+        <!--</li>-->
+        <!--<li class="alphabet-countries__country-wrapper">-->
+        <!--<a href="#" class="alphabet-countries__country">Албания</a>-->
+        <!--</li>-->
+        <!--<li class="alphabet-countries__country-wrapper">-->
+        <!--<a href="#" class="alphabet-countries__country">Алгерия</a>-->
+        <!--</li>-->
+        <!--<li class="alphabet-countries__country-wrapper">-->
+        <!--<a href="#" class="alphabet-countries__country">Андорра</a>-->
+        <!--</li>-->
+        <!--<li class="alphabet-countries__country-wrapper">-->
+        <!--<a href="#" class="alphabet-countries__country">Аргентина</a>-->
+        <!--</li>-->
+        <!--<li class="alphabet-countries__country-wrapper">-->
+        <!--<a href="#" class="alphabet-countries__country">Армения</a>-->
+        <!--</li>-->
+        <!--<li class="alphabet-countries__country-wrapper">-->
+        <!--<a href="#" class="alphabet-countries__country">Австралия</a>-->
+        <!--</li>-->
+        <!--<li class="alphabet-countries__country-wrapper">-->
+        <!--<a href="#" class="alphabet-countries__country">Австрия</a>-->
+        <!--</li>-->
+        <!--<li class="alphabet-countries__country-wrapper">-->
+        <!--<a href="#" class="alphabet-countries__country">Азербайджан</a>-->
+        <!--</li>-->
+        <!--</ul>-->
+        <!--</li>-->
+      </ul>
+
+    </div>
+
+    <div class="filter-countries__button-wrapper">
+      <button class="filter-countries__button btn btn--rounded-blue">
+        <svg viewBox="0 0 18 18">
+          <path class="st0" d="M10.3,9l7.4-7.4c0.4-0.4,0.4-0.9,0-1.3s-0.9-0.4-1.3,0L9,7.7L1.6,0.3c-0.4-0.4-0.9-0.4-1.3,0s-0.4,0.9,0,1.3
+          L7.7,9l-7.4,7.4c-0.4,0.4-0.4,0.9,0,1.3v0c0.4,0.4,0.9,0.4,1.3,0L9,10.3l7.4,7.4c0.4,0.4,0.9,0.4,1.3,0v0c0.4-0.4,0.4-0.9,0-1.3
+          L10.3,9z"/>
+        </svg>
+        Свернуть
+      </button>
+    </div>
+  </section>
 
   <div class="catalog-main__sections-wrapper">
     <section class="filter-companions">

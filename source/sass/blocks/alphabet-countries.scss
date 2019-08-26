@@ -1,0 +1,15 @@
+.alphabet-countries {
+
+  &__letter {
+    display: none;
+  }
+
+  &__country-wrapper {
+    margin-bottom: 6px;
+  }
+
+  &__country {
+    font-size: 16px;
+    color: $color-greyish-brown;
+  }
+}
